@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_axi_result_tree" model="ir.ui.view">
+        <field name="name">axi.result.tree</field>
+        <field name="model">axi.result</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false" delete="false">
+                <field name="batch_id" optional="hide"/>
+                <field name="account_id"/>
+                <field name="base_nominal"/>
+                <field name="coef_aplicado"/>
+                <field name="monto_ajustado"/>
+                <field name="delta_ajuste"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_axi_result_form" model="ir.ui.view">
+        <field name="name">axi.result.form</field>
+        <field name="model">axi.result</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false" delete="false">
+                <sheet>
+                    <group>
+                        <field name="batch_id"/>
+                        <field name="account_id"/>
+                    </group>
+                    <group>
+                        <field name="base_nominal"/>
+                        <field name="coef_aplicado"/>
+                        <field name="monto_ajustado"/>
+                        <field name="delta_ajuste"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_axi_result" model="ir.actions.act_window">
+        <field name="name">Resultados AXI</field>
+        <field name="res_model">axi.result</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

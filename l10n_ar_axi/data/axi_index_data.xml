@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="axi_index_dic24" model="axi.index">
+        <field name="name">IPC dic-24</field>
+        <field name="date">2024-12-31</field>
+        <field name="index_value">7694.007500</field>
+    </record>
+    <record id="axi_index_ene25" model="axi.index">
+        <field name="name">IPC ene-25</field>
+        <field name="date">2025-01-31</field>
+        <field name="index_value">7864.125700</field>
+    </record>
+    <record id="axi_index_feb25" model="axi.index">
+        <field name="name">IPC feb-25</field>
+        <field name="date">2025-02-28</field>
+        <field name="index_value">8052.992700</field>
+    </record>
+    <record id="axi_index_mar25" model="axi.index">
+        <field name="name">IPC mar-25</field>
+        <field name="date">2025-03-31</field>
+        <field name="index_value">8353.315800</field>
+    </record>
+    <record id="axi_index_abr25" model="axi.index">
+        <field name="name">IPC abr-25</field>
+        <field name="date">2025-04-30</field>
+        <field name="index_value">8585.607800</field>
+    </record>
+    <record id="axi_index_may25" model="axi.index">
+        <field name="name">IPC may-25</field>
+        <field name="date">2025-05-31</field>
+        <field name="index_value">8714.487100</field>
+    </record>
+    <record id="axi_index_jun25" model="axi.index">
+        <field name="name">IPC jun-25</field>
+        <field name="date">2025-06-30</field>
+        <field name="index_value">8855.568100</field>
+    </record>
+    <record id="axi_index_jul25" model="axi.index">
+        <field name="name">IPC jul-25</field>
+        <field name="date">2025-07-31</field>
+        <field name="index_value">9023.973000</field>
+    </record>
+    <record id="axi_index_ago25" model="axi.index">
+        <field name="name">IPC ago-25</field>
+        <field name="date">2025-08-31</field>
+        <field name="index_value">9193.244100</field>
+    </record>
+    <record id="axi_index_sep25" model="axi.index">
+        <field name="name">IPC sep-25</field>
+        <field name="date">2025-09-30</field>
+        <field name="index_value">9384.092200</field>
+    </record>
+    <record id="axi_index_oct25" model="axi.index">
+        <field name="name">IPC oct-25</field>
+        <field name="date">2025-10-31</field>
+        <field name="index_value">9603.862300</field>
+    </record>
+    <record id="axi_index_nov25" model="axi.index">
+        <field name="name">IPC nov-25</field>
+        <field name="date">2025-11-30</field>
+        <field name="index_value">9841.358100</field>
+    </record>
+    <record id="axi_index_dic25" model="axi.index">
+        <field name="name">IPC dic-25</field>
+        <field name="date">2025-12-31</field>
+        <field name="index_value">10121.371500</field>
+    </record>
+    <record id="axi_index_ene26" model="axi.index">
+        <field name="name">IPC ene-26</field>
+        <field name="date">2026-01-31</field>
+        <field name="index_value">10413.030900</field>
+    </record>
+    <record id="axi_index_feb26" model="axi.index">
+        <field name="name">IPC feb-26</field>
+        <field name="date">2026-02-28</field>
+        <field name="index_value">10714.625500</field>
+    </record>
+</odoo>

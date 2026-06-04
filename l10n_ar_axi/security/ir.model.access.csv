@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_axi_index_manager,access.axi.index.manager,model_axi_index,account.group_account_manager,1,1,1,1
+access_axi_batch_manager,access.axi.batch.manager,model_axi_batch,account.group_account_manager,1,1,1,1
+access_axi_result_manager,access.axi.result.manager,model_axi_result,account.group_account_manager,1,1,1,1
+access_axi_result_user,access.axi.result.user,model_axi_result,account.group_account_user,1,0,0,0
+access_axi_result_internal,access.axi.result.internal,model_axi_result,base.group_user,1,1,1,1
+access_axi_report_manager,access.axi.report.manager,model_axi_report,account.group_account_manager,1,1,1,1

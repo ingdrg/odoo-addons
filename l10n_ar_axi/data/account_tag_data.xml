@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="account_account_tag_axi_no_monetaria" model="account.account.tag">
+        <field name="name">AXI_NO_MONETARIA</field>
+        <field name="applicability">accounts</field>
+    </record>
+</odoo>

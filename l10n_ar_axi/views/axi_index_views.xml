@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_axi_index_tree" model="ir.ui.view">
+        <field name="name">axi.index.tree</field>
+        <field name="model">axi.index</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date"/>
+                <field name="name"/>
+                <field name="index_value"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_axi_index_form" model="ir.ui.view">
+        <field name="name">axi.index.form</field>
+        <field name="model">axi.index</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="label" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="index_value"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_axi_index" model="ir.actions.act_window">
+        <field name="name">Índices IPC</field>
+        <field name="res_model">axi.index</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_axi_root" name="Ajuste por Inflación"
+              parent="account.menu_finance_entries"
+              sequence="95"
+              groups="account.group_account_manager"/>
+    <menuitem id="menu_axi_batch" name="Batches" parent="menu_axi_root" action="action_axi_batch" sequence="10" groups="account.group_account_manager"/>
+    <menuitem id="menu_axi_index" name="Índices IPC" parent="menu_axi_root" action="action_axi_index" sequence="20" groups="account.group_account_manager"/>
+    <menuitem id="menu_axi_result" name="Resultados" parent="menu_axi_root" action="action_axi_result" sequence="30" groups="account.group_account_manager"/>
+    <menuitem id="menu_axi_report" name="Sumas y Saldos Comparativo" parent="menu_axi_root" action="action_axi_report" sequence="40" groups="account.group_account_manager"/>
+</odoo>

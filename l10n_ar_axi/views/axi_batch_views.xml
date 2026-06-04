@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_axi_batch_tree" model="ir.ui.view">
+        <field name="name">axi.batch.tree</field>
+        <field name="model">axi.batch</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="company_id"/>
+                <field name="date_end"/>
+                <field name="journal_id"/>
+                <field name="close_index_id"/>
+                <field name="close_index_value"/>
+                <field name="move_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_axi_batch_form" model="ir.ui.view">
+        <field name="name">axi.batch.form</field>
+        <field name="model">axi.batch</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_calculate_and_post" type="object" string="Calcular y contabilizar" class="oe_highlight" attrs="{'invisible': [('state', '=', 'posted')]}"/>
+                    <button name="action_reset_to_draft" type="object" string="Volver a borrador" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                    <button name="action_view_results" type="object" string="Ver resultados"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="company_id"/>
+                            <field name="date_end"/>
+                            <field name="journal_id"/>
+                        </group>
+                        <group>
+                            <field name="close_index_id" readonly="1"/>
+                            <field name="close_index_value" readonly="1"/>
+                            <field name="move_id" readonly="1"/>
+                            <field name="line_count" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="note" placeholder="Notas internas o criterio aplicado..."/>
+                    </group>
+                    <notebook>
+                        <page string="Resultados">
+                            <field name="result_ids" nolabel="1" readonly="1">
+                                <tree create="false" delete="false" edit="false">
+                                    <field name="account_id"/>
+                                    <field name="base_nominal"/>
+                                    <field name="coef_aplicado"/>
+                                    <field name="monto_ajustado"/>
+                                    <field name="delta_ajuste"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_axi_batch" model="ir.actions.act_window">
+        <field name="name">Batches AXI</field>
+        <field name="res_model">axi.batch</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

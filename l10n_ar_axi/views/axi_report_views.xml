@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_axi_report_form" model="ir.ui.view">
+        <field name="name">axi.report.form</field>
+        <field name="model">axi.report</field>
+        <field name="arch" type="xml">
+            <form string="Sumas y Saldos Comparativo">
+                <group>
+                    <group>
+                        <field name="company_id"/>
+                        <field name="date_to"/>
+                    </group>
+                </group>
+                <group string="Diarios a incluir en el análisis">
+                    <field name="journal_ids" nolabel="1" widget="many2many_tags"
+                           options="{'no_create': True}"/>
+                </group>
+                <footer>
+                    <button name="action_export_xlsx" type="object"
+                            string="Exportar XLSX" class="oe_highlight"/>
+                    <button special="cancel" string="Cancelar"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_axi_report" model="ir.actions.act_window">
+        <field name="name">Sumas y Saldos Comparativo</field>
+        <field name="res_model">axi.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

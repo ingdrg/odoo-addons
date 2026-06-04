@@ -1,0 +1,26 @@
+{
+    'name': 'Argentina - Ajuste por Inflación',
+    'version': '15.0.1.6.0',
+    'summary': 'Batch de ajuste por inflación contable para Odoo Accounting',
+    'category': 'Accounting/Accounting',
+    'author': 'DRG',
+    'license': 'LGPL-3',
+    'depends': ['account'],
+    'external_dependencies': {
+        'python': ['xlsxwriter'],
+    },
+    'data': [
+        'security/ir.model.access.csv',
+        'data/account_tag_data.xml',
+        'data/sequence_data.xml',
+        'data/axi_index_data.xml',
+        'views/axi_index_views.xml',
+        'views/axi_batch_views.xml',
+        'views/axi_result_views.xml',
+        'views/axi_report_views.xml',
+        'views/res_config_settings_views.xml',
+        'views/menu_views.xml',
+    ],
+    'application': False,
+    'installable': True,
+}
